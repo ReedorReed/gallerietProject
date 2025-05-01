@@ -1,0 +1,376 @@
+/*Header*/
+
+#header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+.galleriet-logo-container {
+	display: flex;
+	align-items: center;
+	width: auto;
+}
+
+#galleri-logo {
+	width: 178px;
+	height: 37px;
+}
+
+/* ---------------------------------- */
+
+/*Main menu*/
+
+#desktop-menu {
+	display: none;
+}
+
+.off-screen-menu {
+	background-color: #7be3c4;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	width: 100%;
+	max-width: 450px;
+	position: fixed;
+	top: 0;
+	right: -450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 3rem;
+	transition: 0.3s ease;
+	line-height: 4.5rem;
+	z-index: 600;
+	overflow-y: auto;
+}
+
+.off-screen-menu.active {
+	right: 0;
+}
+
+.menu-item {
+	color: var(--primary-color);
+}
+
+nav {
+	padding: 1rem;
+	display: flex;
+}
+
+.ham-menu {
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	position: relative;
+}
+
+.ham-menu span {
+	height: 2.4px;
+	width: 70%;
+	background-color: var(--secondary-color);
+	border-radius: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s ease;
+	z-index: 999;
+}
+
+.ham-menu span:nth-child(1) {
+	top: 30%;
+}
+
+.ham-menu span:nth-child(3) {
+	top: 70%;
+}
+
+/*burger menu X*/
+.ham-menu.active span:nth-child(1) {
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background-color: var(--primary-color);
+}
+.ham-menu.active span:nth-child(2) {
+	opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+	top: 50%;
+	transform: translate(-50%, 50%) rotate(-45deg);
+	background-color: var(--primary-color);
+}
+
+/* ---------------------------------- */
+/*Founders section*/
+
+.founder-section {
+	height: 60vh;
+	background-color: var(--tertiary-color);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.founder-section h2 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 100%;
+}
+
+.founders {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 2rem;
+}
+
+.founder-card {
+	width: 100px;
+	height: 110px;
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+	background-color: var(--primary-color);
+	margin: 10% auto;
+	padding: 30px;
+	border-radius: 10px;
+	width: 70%;
+	max-width: 700px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.modal-content img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-content h2 {
+	font-size: 1.8rem;
+	margin-bottom: 15px;
+	color: #333;
+}
+
+.modal-content p {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #555;
+}
+
+.close {
+	color: #777;
+	float: right;
+	font-size: 32px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.close:hover {
+	color: #000;
+}
+
+/* ---------------------------------- */
+/*Footer*/
+footer {
+	height: 55vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+footer .galleriet-logo-container {
+	margin: 35px;
+}
+
+footer #galleri-logo {
+	height: 45px;
+	width: 214px;
+}
+
+#footer-menu {
+	display: none;
+}
+
+.toTop img {
+	width: 32px;
+	height: 32px;
+}
+
+.adress {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+	opacity: 75%;
+}
+.footer-contact a {
+	opacity: 75%;
+}
+
+.telephone {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	opacity: 75%;
+}
+
+.tlfwrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.copyright {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	color: var(--secondary-color);
+	opacity: 65%;
+}
+
+.footer-wrapper {
+	display: flex;
+}
+
+.footer-left-coloumn {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	justify-content: space-evenly;
+}
+
+/* ---------------------------------- */
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 700px) {
+	/*HEADER & MENU SECTION*/
+	#header {
+		justify-content: space-between;
+	}
+
+	#desktop-menu {
+		display: block;
+		width: 50%;
+	}
+
+	#desktop-menu ul {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	.active-desktop-menu-line {
+		position: relative;
+		top: 25px;
+	}
+
+	.off-screen-menu,
+	.ham-menu,
+	.burger-nav {
+		display: none;
+	}
+
+	/*FOUNDERS SECTION*/
+
+	.founders {
+		display: flex;
+		margin-top: 2rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.founder-section h2 {
+		margin-top: 3rem;
+	}
+
+	.founder-card {
+		width: auto;
+		height: 100%;
+	}
+
+	/*FOOTER SECTION*/
+
+	#footer-menu {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		top: -40%;
+	}
+	.footer-menu-item {
+		color: var(--secondary-color);
+		opacity: 75%;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	#button-footer {
+		border: none;
+		background-color: var(--tertiary-color);
+		padding: 5px 15px;
+		margin: 15px 0;
+		font-size: 14px;
+		font-weight: 500;
+		font-family: 'Montserrat', sans-serif;
+		width: 121px;
+	}
+
+	.footer-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.toTop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		position: static;
+		width: 25%;
+	}
+	.toTop figcaption {
+		margin-top: 40px;
+	}
+
+	.telephone {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20%;
+		opacity: 75%;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	.tlfwrapper {
+		flex-direction: row;
+		gap: 15px;
+	}
+}

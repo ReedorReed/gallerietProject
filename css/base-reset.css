@@ -1,0 +1,62 @@
+/*Base reset*/
+
+/*Box sizing rules*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*Remove list styles on ul & ol elements*/
+ul,
+ol {
+	list-style: none;
+}
+
+/*Remove default button styles*/
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+/*Ensure media elements fit within their container*/
+img,
+video {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+
+:root {
+	--primary-color: #f2f3f5;
+	--secondary-color: #111111;
+	--tertiary-color: #7be3c4;
+	--footer-color: #ededed;
+}
+/*Remove default anchor styles*/
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 24px;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+footer {
+	background-color: var(--footer-color);
+}
+
+#container {
+	background-color: var(--primary-color);
+}
+
+/* ---------------------------------- */
