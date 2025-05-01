@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+
+		<link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/base-reset.css" />
+		<link rel="stylesheet" href="css/style-contact.css" />
+		<link rel="stylesheet" href="css/menu-footer.css" />
+		<script src="js/burgerMenu.js" defer></script>
+		<script src="js/contactValidate.js" defer></script>
+		<script src="js/script.js" defer></script>
+		<title>Galleriet|Korsbæk|Kontakt</title>
+	</head>
+	<body>
+		<div id="container">
+			<header id="header">
+				<figure class="galleriet-logo-container">
+					<a href="index.html"
+						><img src="images/headLogo.png" id="galleri-logo" alt="logo"
+					/></a>
+				</figure>
+
+				<nav id="desktop-menu">
+					<ul>
+						<li><a href="index.html" class="desktop-menu-item">Hjem</a></li>
+						<li>
+							<a href="oplevelser.html" class="desktop-menu-item">Oplevelser</a>
+						</li>
+						<li>
+							<a href="mineTilbud.html" class="desktop-menu-item"
+								>Mine tilbud</a
+							>
+						</li>
+						<li>
+							<a href="kontakt.html" class="desktop-menu-item">Kontakt</a>
+						</li>
+						<li><a href="faq.html" class="desktop-menu-item">FAQ</a></li>
+					</ul>
+				</nav>
+
+				<div class="off-screen-menu">
+					<ul>
+						<li><a href="index.html" class="menu-item">Hjem</a></li>
+						<li><a href="oplevelser.html" class="menu-item">Oplevelser</a></li>
+						<li><a href="mineTilbud.html" class="menu-item">Mine tilbud</a></li>
+						<li><a href="kontakt.html" class="menu-item">Kontakt</a></li>
+						<li><a href="faq.html" class="menu-item">FAQ</a></li>
+					</ul>
+				</div>
+
+				<nav class="burger-nav">
+					<div class="ham-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<article class="main-content">
+					<section class="hero oplev-hero">
+						<figure class="hero-figure">
+							<img
+								src="images/biograf-half.png"
+								alt="hero biograf"
+								class="hero-img" />
+							<figcaption class="hero-figcaption">
+								<div class="hero-headings">
+									<h1 class="hero-heading">Kontakt os</h1>
+								</div>
+							</figcaption>
+						</figure>
+					</section>
+					<section class="contact-section">
+						<div class="contact-wrapper">
+							<h2>Kontakt Galleriet</h2>
+							<form action="tak.html" id="form">
+								<div class="input-wrapper">
+									<label for="dit-navn"></label>
+									<input
+										type="text"
+										id="dit-navn"
+										placeholder="NAVN"
+										required />
+									<i class="check-circle"></i>
+								</div>
+								<div class="input-wrapper">
+									<label for="dit-mobil"></label>
+									<input
+										type="tel"
+										id="dit-mobil"
+										placeholder="MOBIL"
+										required />
+									<i class="check-circle"></i>
+								</div>
+								<div class="input-wrapper">
+									<label for="din-email"></label>
+									<input
+										type="email"
+										id="din-email"
+										placeholder="EMAIL"
+										required />
+									<i class="check-circle"></i>
+								</div>
+								<div class="input-wrapper">
+									<label for="din-besked"></label>
+									<textarea
+										name=""
+										id="din-besked"
+										placeholder="BESKED"
+										required></textarea>
+								</div>
+								<div class="btn-wrapper">
+									<input id="my-btn" type="submit" value="Send" />
+								</div>
+							</form>
+						</div>
+					</section>
+				</article>
+				<section class="founder-section">
+					<h2>Galleriets butikker</h2>
+					<div class="founders">
+						<div id="fotex" class="founder-card">
+							<img src="images/foetexLogo.png" alt="Føtex logo" />
+						</div>
+						<div id="normal" class="founder-card">
+							<img src="images/normalLogo.png" alt="Normal logo" />
+						</div>
+						<div id="slikhytten" class="founder-card">
+							<img src="images/slikhyttenLogo.png" alt="Slikhytten Logo" />
+						</div>
+						<div id="bio" class="founder-card">
+							<img src="images/korsbækbioLogo.png" alt="Korsbæk bio logo" />
+						</div>
+						<div id="svommehal" class="founder-card">
+							<img
+								src="images/korsbæksvømmehalLogo.png"
+								alt="Korsbøk svømmehal logo" />
+						</div>
+					</div>
+
+					<!-- modal section for shops -->
+					<div id="modal-fotex" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="images/foetexLogo.png" alt="fotex" />
+							<h2>Fotex</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam, voluptatibus.
+							</p>
+						</div>
+					</div>
+
+					<div id="modal-normal" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="images/normalLogo.png" alt="normal" />
+							<h2>Normal</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam, voluptatibus.
+							</p>
+						</div>
+					</div>
+
+					<div id="modal-slikhytten" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="images/slikhyttenLogo.png" alt="slikhytten" />
+							<h2>Slikhytten</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam, voluptatibus.
+							</p>
+						</div>
+					</div>
+
+					<div id="modal-bio" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="images/korsbækbioLogo.png" alt="bio" />
+							<h2>Biografen</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam, voluptatibus.
+							</p>
+						</div>
+					</div>
+
+					<div id="modal-svommehal" class="modal">
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="images/korsbæksvømmehalLogo.png" alt="svommehal" />
+							<h2>Svømmehallen</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Quisquam, voluptatibus.
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<figure class="galleriet-logo-container">
+					<img src="images/headLogo.png" id="galleri-logo" alt="logo" />
+				</figure>
+				<div class="footer-wrapper">
+					<div class="footer-contact">
+						<p>
+							<a href="https://maps.app.goo.gl/m8TsU325HN7DDDBv7" target="_blank"
+								>Galleristrædet 1<br />4021 Korsbæk</a
+							>
+						</p>
+
+						<div class="telephone">
+							<a href="tel:+4521436587" class="telefon">+45 2143 6587</a>
+							<a href="mailto:hej@galleriet-korsbaek.com" class="mail"
+								>hej@galleriet-korsbaek.com</a
+							>
+						</div>
+					</div>
+
+					<div id="footer-menu">
+						<a href="mineTilbud.html" class="footer-menu-item">Tilbud</a>
+						<a href="faq.html" class="footer-menu-item">FAQ</a>
+						<a href="kontakt.html" class="footer-menu-item">Kontakt</a>
+						<a href="kontakt.html"
+							><button id="button-footer">Kontakt os</button></a
+						>
+					</div>
+
+					<figure class="toTop">
+						<a href="#header"><img src="icons/upArrow.png" alt="Pil op" /></a>
+						<figcaption>
+							<div class="copyright">
+								<p>© 2021 Armadillo Design Lab</p>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
